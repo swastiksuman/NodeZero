@@ -1,0 +1,11 @@
+---
+- hosts: machines
+  tasks:
+          - name: Ping ip
+            shell: echo hello
+          - name: change node repo
+            shell: get-url -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
+          - name: install node
+            shell: sudo yum -y install nodejs
+          - name: check node version
+            shell: node --version  
