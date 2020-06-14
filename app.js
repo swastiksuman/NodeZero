@@ -63,4 +63,14 @@ rl.on('close', () => {console.log('Correct!!!'); rl.close();});
 
 
 const fs = require('fs');
-fs.writeFile('example.txt', 'this is an example',(err) => {});
+fs.writeFile('example.txt', 'this is an example',(err) => {
+    if(err){
+        console.log("Error creating file: " + err.message);
+    }else{
+        console.log("File Creation Successful");
+    }
+});
+
+const _ = require('lodash');
+let example = _.fill([1, 2, 3, 4, 5], "banana", 1, 4);
+console.log(example);
