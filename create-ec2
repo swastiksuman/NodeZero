@@ -1,0 +1,1 @@
+aws ec2 run-instances --image-id ami-09d95fab7fff3776c --count 1 --instance-type t2.micro --key-name amazon-linux --security-group-ids sg-8ea365c6
