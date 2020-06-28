@@ -1,4 +1,4 @@
-mymachine ansible_ssh_host=35.174.213.20 ansible_ssh_user=centos ansible_ssh_private_key_file=/home/swastik/Downloads/aws-ubuntusys.pem
+mymachine ansible_ssh_host=3.81.95.128 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=/home/swastik/Downloads/aws-ubuntusys.pem
 
 [machines]
 mymachine
