@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodezero-pod
+  labels:
+    component: web
+spec:
+  containers:
+    - name: nodezero-client
+      image: swastiksuman/node-my-server
+      ports:
+        - containerPort: 3001
